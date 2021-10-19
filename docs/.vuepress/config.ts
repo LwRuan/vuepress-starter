@@ -2,6 +2,7 @@ import { defineUserConfig } from 'vuepress'
 import type { MixThemeConfig } from 'vuepress-theme-mix/lib/node'
 import { sidebar } from './configs'
 import mathjax3 from 'markdown-it-mathjax3'
+import { path } from '@vuepress/utils'
 
 export default defineUserConfig<MixThemeConfig>({
   lang: 'zh-CN',
@@ -17,5 +18,13 @@ export default defineUserConfig<MixThemeConfig>({
   extendsMarkdown: (md) => {
     md.use(mathjax3)
   },
+  plugins: [
+    [
+      '@vuepress/register-components',
+      {
+        componentsDir: path.resolve(__dirname, './components'),
+      },
+    ],
+  ],
   dest: 'public',
 })

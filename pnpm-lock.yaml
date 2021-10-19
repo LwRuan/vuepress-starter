@@ -1,11 +1,19 @@
 lockfileVersion: 5.3
 
 specifiers:
+  '@vuepress/plugin-register-components': ^2.0.0-beta.26
   markdown-it-mathjax3: ^3.0.0-0
+  three: ^0.133.1
+  troisjs: ^0.3.2
   vuepress: ^2.0.0-beta.26
   vuepress-theme-mix: ^1.2.4
 
+dependencies:
+  three: 0.133.1
+  troisjs: 0.3.2
+
 devDependencies:
+  '@vuepress/plugin-register-components': 2.0.0-beta.26
   markdown-it-mathjax3: 3.0.0-0
   vuepress: 2.0.0-beta.26
   vuepress-theme-mix: 1.2.4
@@ -468,6 +476,16 @@ packages:
     dependencies:
       '@vuepress/core': 2.0.0-beta.26
       prismjs: 1.25.0
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
+  /@vuepress/plugin-register-components/2.0.0-beta.26:
+    resolution: {integrity: sha512-a6Wb8kH14L/CXjKNU5N26hsXrYutlnf59GWAJb/ZmGBxZxVPYfMpdLsP0T89jM4pQX2NZWYIxQu1MRnGfYOVQw==}
+    dependencies:
+      '@vuepress/core': 2.0.0-beta.26
+      '@vuepress/utils': 2.0.0-beta.25
+      chokidar: 3.5.2
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -3374,6 +3392,10 @@ packages:
       source-map-support: 0.5.20
     dev: true
 
+  /three/0.133.1:
+    resolution: {integrity: sha512-WydohO8ll949B0FTD6MGz59Yv2Lwj8hvObg/0Heh2r42S6+tQC1WByfCNRdmG4D7+odfGod+n8JPV1I2xrboWw==}
+    dev: false
+
   /thunky/1.1.0:
     resolution: {integrity: sha512-eHY7nBftgThBqOyHGVN+l8gF0BucP09fMo0oO/Lb0w1OF80dJv+lDVpXG60WMQvkcxAkNybKsrEIE3ZtKGmPrA==}
     dev: true
@@ -3397,6 +3419,10 @@ packages:
   /tr46/0.0.3:
     resolution: {integrity: sha1-gYT9NH2snNwYWZLzpmIuFLnZq2o=}
     dev: true
+
+  /troisjs/0.3.2:
+    resolution: {integrity: sha512-RF+r6tZvODVG1kwiz2BacxJTzap5UIlhIX3v9dmU/t4guIkeAA8VB8dy441vl+gPpQEuavOF5EkCs83bu3f5nQ==}
+    dev: false
 
   /ts-debounce/3.0.0:
     resolution: {integrity: sha512-7jiRWgN4/8IdvCxbIwnwg2W0bbYFBH6BxFqBjMKk442t7+liF2Z1H6AUCcl8e/pD93GjPru+axeiJwFmRww1WQ==}
